@@ -21,6 +21,8 @@ repositories {
 jar {
 	baseName = 'myproject'
 	version =  '0.0.1-SNAPSHOT'
+	archiveFileName = "${baseName}-${version}.jar"
+	destinationDir = new File(buildDir, "target")
 }
 
 dependencies {
