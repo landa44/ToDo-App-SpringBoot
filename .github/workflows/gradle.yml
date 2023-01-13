@@ -36,7 +36,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: artifact
-        path: target/tweet_scheduler-0.0.1-SNAPSHOT.jar  
+        path: build/libs/myproject-0.0.1-SNAPSHOT.jar
         
   deploy:
     needs: build
@@ -59,4 +59,4 @@ jobs:
           environment_name: Todobackend-env
           version_label: ${{github.SHA}}
           region: us-east-1
-          deployment_package: tweet_scheduler-0.0.1-SNAPSHOT.jar
+          deployment_package: myproject-0.0.1-SNAPSHOT.jar
