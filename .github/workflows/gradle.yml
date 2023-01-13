@@ -55,8 +55,8 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           #aws_session_token: ${{ secrets.AWS_SESSION_TOKEN }}
           use_existing_version_if_available: false
-          application_name: Todobackend
-          environment_name: Todobackend-env
+          application_name: Todo2
+          environment_name: Todo2-env
           version_label: ${{github.SHA}}
           region: us-east-1
           deployment_package: myproject-0.0.1-SNAPSHOT.jar
